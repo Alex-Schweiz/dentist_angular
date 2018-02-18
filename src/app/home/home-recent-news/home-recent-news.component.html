@@ -1,0 +1,23 @@
+<section class="section-recentnews">
+  <div class="container">
+    <h3>{{recentNewsHeader}}</h3>
+    <div class="row">
+      <ng-container *ngFor="let item of recentNews">
+        <div class="col-sm-4">
+          <img src="{{item.imgPath}}" alt="">
+          <h4 class="text-extra-bold">{{item.newsHeading}}</h4>
+          <ul class="">
+            <li>by <span class="text-extra-bold text-gray-light">{{item.author}}</span></li>
+            <li><time class="post-meta-time text-gray-lighter">{{item.date}}</time></li>
+            <li><a href="/">{{item.category}}</a></li>
+          </ul>
+          <p>
+          </p>
+        </div>
+      </ng-container>
+    </div>
+    <div class="middle-button">
+      <a class="btn btn-primary" href="/">{{seeAllNews}}</a>
+    </div>
+  </div>
+</section>

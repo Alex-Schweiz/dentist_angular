@@ -10,6 +10,10 @@ import { HomeWelcomeWordsComponent } from './home/home-welcome-words/home-welcom
 import { HomeWhyChooseOurClinicComponent } from './home/home-why-choose-our-clinic/home-why-choose-our-clinic.component';
 import { HomeOurServicesComponent } from './home/home-our-services/home-our-services.component';
 import { HomeTestimonialsComponent } from './home/home-testimonials/home-testimonials.component';
+import { HomeHowWeCanHelpComponent } from './home/home-how-we-can-help/home-how-we-can-help.component';
+import { HomeRecentNewsComponent } from './home/home-recent-news/home-recent-news.component';
+import { FooterComponent } from './core/footer/footer.component';
+import { FooterCopyrightComponent } from './core/footer/footer-copyright/footer-copyright.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { HomeTestimonialsComponent } from './home/home-testimonials/home-testimo
     HomeWelcomeWordsComponent,
     HomeWhyChooseOurClinicComponent,
     HomeOurServicesComponent,
-    HomeTestimonialsComponent
+    HomeTestimonialsComponent,
+    HomeHowWeCanHelpComponent,
+    HomeRecentNewsComponent,
+    FooterComponent,
+    FooterCopyrightComponent
   ],
   imports: [
     BrowserModule

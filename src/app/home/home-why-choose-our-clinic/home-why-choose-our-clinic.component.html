@@ -1,0 +1,14 @@
+<section class="section-ourclinic">
+  <div class="container">
+    <h3>{{headingSectionText}}</h3>
+    <div class="row section-ouradvantage">
+      <ng-container *ngFor="let item of whyChooseUsSection">
+        <div class="col-sm-3 col-xs-12">
+          <div class="icon fa icon-circle {{item.icon}}"></div>
+          <h4>{{item.heading}}</h4>
+          <p>{{item.text}}</p>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</section>

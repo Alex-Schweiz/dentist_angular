@@ -1,0 +1,19 @@
+<section class="section-ourpatients">
+  <div class="container">
+    <h3>{{mainHeading}}</h3>
+    <ng-container *ngFor="let item of homeTestimonials">
+      <div class="col-sm-4">
+        <blockquote class="quote marks">
+          <img class="img-responsive img-circle" src="{{item.imgPath}}" alt="">
+          <p>
+            <q>{{item.testimonial}}</q>
+          </p>
+          <div>
+            <cite class="text-extra-bold text-gray-light">{{item.author}}</cite>
+            <time class="text-gray-lighter text-italic"> – {{item.date}}</time>
+          </div>
+        </blockquote>
+      </div>
+    </ng-container>
+  </div>
+</section>

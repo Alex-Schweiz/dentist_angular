@@ -1,0 +1,16 @@
+<section class="section-ourservices">
+  <div class="container">
+    <h3>{{sectionHeading}}</h3>
+    <div class="row">
+      <ng-container *ngFor="let item of ourServicesItems">
+        <div class="col-sm-3 col-xs-12">
+          <a href="{{item.link}}"><img src="{{item.imgPath}}" alt=""></a>
+          <a href="{{item.link}}"><h4>{{item.heading}}</h4></a>
+        </div>
+      </ng-container>
+    </div>
+    <div class="middle-button">
+      <a class="btn btn-primary" href="/">See all services</a>
+    </div>
+  </div>
+</section>

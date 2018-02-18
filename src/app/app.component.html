@@ -1,68 +1,4 @@
-<!-- Top blue stripe -->
-<div class="blue">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-3  col-xs-12">
-        <ul class="list-inline">
-          <li><a href="#" class="icon fa fa-facebook"></a></li>
-          <li><a href="#" class="icon fa fa-twitter"></a></li>
-          <li><a href="#" class="icon fa fa-google-plus"></a></li>
-          <li><a href="#" class="icon fa fa-youtube"></a></li>
-          <li><a href="#" class="icon fa fa-rss"></a></li>
-        </ul>
-      </div>
-      <div class="col-sm-3  col-xs-12"></div>
-      <div class="col-sm-6  col-xs-12">
-        <ul class="list-inline1 offset-sm-9">
-          <li class="text-white italic">Make an Appointment Now!</li>
-          <li class="text-white text-extra-bold"><a href="#">Book an Appointment</a></li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- Upper header -->
-<div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-3  col-xs-12">
-        <div class="brand">
-          <a class="brand-name" href="index.html">
-            <span class="text-primary">Alex</span><span class="text-uppercase text-gray-light">Dentist</span>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-2"></div>
-      <div class="col-sm-3">
-        <div class="unit">
-          <div class="unit-left">
-            <div class="icon fa fa-phone icon-circle text-primary left"></div>
-          </div>
-          <div class="unit-body">
-            <div class="text-extra-bold text-gray-light">Call Today:</div>
-            <div class="italic">
-              <a class="text-gray-lighter">555–123–2323;</a>
-              <a class="text-gray-lighter">555–123–2323</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="unit">
-          <div class="unit-left">
-            <div class="icon fa fa-clock-o icon-circle text-primary left"></div>
-          </div>
-          <div class="unit-body">
-            <div class="text-extra-bold text-gray-light">Opening Hours:</div>
-            <div class="italic text-gray-lighter">Mon–Fri: 9am–6pm; Sun:8am–1pm</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<app-header></app-header>
 
 <!-- Plain devider -->
 <hr class="devider">
@@ -87,196 +23,19 @@
 </div>
 
 <!-- Carousel -->
-<div class="div">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="assets/img/slider-01.jpg" alt="Chania">
-        <div class="carousel-caption caption-first">
-          <h3>Dr.<span class="text-extra-bold">Mark Hoffman</span></h3>
-          <p>Dr. Mark Hoffman's dental clinic welcomes you!</p>
-          <button class="btn btn-primary text-extra-bold">Book an Appointment</button>
-        </div>
-      </div>
-      <div class="item">
-        <img src="assets/img/slider-02.jpg" alt="Chania">
-        <div class="carousel-caption caption-second">
-          <h4>We’re always available for customers with emergent dental problems.</h4>
-          <p>You can easily reach us 24/7 via the phone number below:</p>
-          <div class="unit">
-            <div class="unit-left">
-              <div class="icon fa fa-phone icon-circle text-primary left"></div>
-            </div>
-            <div class="unit-body text-extra-bold">555–123–2323</div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <img src="assets/img/slider-03.jpg" alt="Flower">
-        <div class="carousel-caption caption-third">
-          <h1 class="text-extra-bold">Appointments</h1>
-          <h3>Booking an appointment at our dental clinic is as easy as it gets...</h3>
-          <p> You will be able to schedule a convenient time for your meeting with our dentists with just 2 clicks!</p>
-          <button class="btn btn-primary text-extra-bold">Book an Appointment</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<app-home-slider></app-home-slider>
 
 <!-- Welcome words -->
-<section class="section-welcome">
-  <div class="container">
-    <div class="col-sm-6  col-xs-12">
-      <img class="img-responsive" src="assets/img/home-01-550x550.jpg" alt="">
-    </div>
-    <div class="col-sm-6  col-xs-12 welcome-word">
-      <h3>Welcome to BeDentist</h3>
-      <h4>Dental clinic BeDentist welcomes you!</h4>
-      <p>We’re glad you hand your dental health concerns to our skilled hands.
-        We’ll make sure to deliver the best possible healthcare to all our patients!
-        Of course, we always complement our main services with a customer service oriented approach.</p>
-      <p>We sincerely believe that visiting a dentist shouldn’t be a frightening or stressful experience!
-        We provide an equally comfortable experience of relaxation for all our young and adult customers!
-        Also we implement a lot of pain management and anesthesia options. <span class="italic text-extra-bold">Everything
-                   we do is aimed at making you feel comfortable, while we take care of your oral healthcare!</span></p>
-      <p>It includes both local anesthesia for mouth-numbing as well as a sedative anesthesia.
-        Altogether, this helps relief any pain which might occur in the process of treatment.
-        All in all, we’ve got it all under control at our BeDentist dental health clinic.</p>
-      <p>We invite you to explore the information about our dental office on our website!
-        Feel free to read our terms and conditions and all the additional info we have posted here.</p>
-      <p>Once our customer, you will be leaving our dental clinic with a bright, wide smile!</p>
-
-    </div>
-  </div>
-</section>
+<app-home-welcome-words></app-home-welcome-words>
 
 <!-- Why choose our clinic -->
-<section class="section-ourclinic">
-  <div class="container">
-    <h3>Why choose the BeDentist clinic?</h3>
-    <div class="row section-ouradvantage">
-      <div class="col-sm-3  col-xs-12">
-        <div class="icon fa fa-book icon-circle"></div>
-        <h4>Easy booking</h4>
-        <p>Booking an appointment at our dental clinic is as easy as doing 2 clicks!</p>
-      </div>
-      <div class="col-sm-3  col-xs-12">
-        <div class="icon fa fa-group icon-circle"></div>
-        <h4>Expirience</h4>
-        <p>Combined, our 5 dentists have over half a century of practical experience. They are ready to put it to action for you!</p>
-      </div>
-      <div class="col-sm-3  col-xs-12">
-        <div class="icon fa fa-clock-o icon-circle"></div>
-        <h4>Flexible schedule</h4>
-        <p>We work during all state holidays, besides working till late during the regular days.
-          In case of emergencies we accept weekend bookings.</p>
-      </div>
-      <div class="col-sm-3  col-xs-12">
-        <div class="icon fa fa-thumbs-up icon-circle"></div>
-        <h4>Best price guarantee</h4>
-        <p>Our reasonable prices made thousands of people smile with a new, beautiful smile, as never before!!</p>
-      </div>
-    </div>
-  </div>
-</section>
+<app-home-why-choose-our-clinic></app-home-why-choose-our-clinic>
 
 <!-- Our Services -->
-<section class="section-ourservices">
-  <div class="container">
-    <h3>Our services</h3>
-    <div class="row">
-      <div class="col-sm-3  col-xs-12">
-        <a href="#"><img src="assets/img/services-04-270x270.jpg" alt=""></a>
-        <a href="#"><h4>General and preventive care</h4></a>
-      </div>
-      <div class="col-sm-3  col-xs-12">
-        <a href="#"><img src="assets/img/services-5-270x270.jpg" alt=""></a>
-        <a href="#"><h4>Cosmetic solutions</h4></a>
-      </div>
-      <div class="col-sm-3  col-xs-12">
-        <a href="#"><img src="assets/img/services-6-270x270.jpg" alt=""></a>
-        <a href="#"><h4>Restorative solutions</h4></a>
-      </div>
-      <div class="col-sm-3  col-xs-12">
-        <a href="#"><img src="assets/img/services-7-270x270.jpg" alt=""></a>
-        <a href="#"><h4>Additional treatments</h4></a>
-      </div>
-    </div>
-    <div class="middle-button">
-      <a class="btn btn-primary" href="services.html">See all services</a>
-    </div>
-  </div>
-</section>
+<app-home-our-services></app-home-our-services>
 
 <!-- Our patients -->
-<section class="section-ourpatients">
-  <div class="container">
-    <h3>What our patients say</h3>
-    <div class="col-sm-4">
-      <blockquote class="quote marks">
-        <img class="img-responsive img-circle" src="assets/img/testimonials-01-116x116.jpg" alt="">
-        <p>
-          <q>I urgently required dental help last 4th of July.
-            And despite all other clinics being closed, BeDentist took my appointment!
-          </q>
-        </p>
-        <div>
-          <cite class="text-extra-bold text-gray-light">
-            Herbert Wallace
-          </cite>
-          <time class="text-gray-lighter text-italic">
-            – May 10, 2016
-          </time>
-        </div>
-      </blockquote>
-    </div>
-    <div class="col-sm-4">
-      <blockquote class="quote marks">
-        <img class="img-responsive img-circle" src="assets/img/testimonials-02-116x116.jpg" alt="">
-        <p>
-          <q>Comparing teeth whitening prices here and elsewhere,
-            I picked BeDentist. The result was beyond my expectations!
-          </q>
-        </p>
-        <div>
-          <cite class="text-extra-bold text-gray-light">
-            Gary Growles
-          </cite>
-          <time class="text-gray-lighter text-italic">
-            – May 10, 2016
-          </time>
-        </div>
-      </blockquote>
-    </div>
-    <div class="col-sm-4">
-      <blockquote class="quote marks">
-        <img class="img-responsive img-circle" src="assets/img/testimonials-03-116x116.jpg" alt="">
-        <p>
-          <q>Taking my kids to a dentist has never been easier.
-            They just loved the welcoming and warm atmosphere in there!
-          </q>
-        </p>
-        <div>
-          <cite class="text-extra-bold text-gray-light">
-            Daniela Robbery
-          </cite>
-          <time class="text-gray-lighter text-italic">
-            – May 10, 2016
-          </time>
-        </div>
-      </blockquote>
-    </div>
-  </div>
-</section>
+<app-home-testimonials></app-home-testimonials>
 
 <!-- How we can help -->
 <section class="section-wecanhelp">
@@ -426,7 +185,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-3">
-        <p>© 2016 <span class="text-primary">Alex</span>DENTIST. Privacy Policy</p>
+        <p>© 2018 <span class="text-primary">Alex</span>DENTIST. Privacy Policy</p>
       </div>
       <div class="col-sm-3"></div>
       <div class="col-sm-3"></div>
@@ -442,6 +201,3 @@
     </div>
   </div>
 </section>
-
-<!-- Menu script -->
-<script src="js/menu.js"></script>

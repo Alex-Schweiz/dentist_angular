@@ -1,0 +1,20 @@
+<div class="blue">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-xs-12">
+        <ul class="list-inline">
+          <ng-container *ngFor="let dentistIcon of dentistSocialIcons">
+            <li><a href="{{dentistIcon.link}}" class="icon fa {{dentistIcon.icon}}"></a></li>
+          </ng-container>
+        </ul>
+      </div>
+      <div class="col-sm-3 col-xs-12"></div>
+      <div class="col-sm-6 col-xs-12">
+        <ul class="list-inline1 offset-sm-9">
+          <li class="text-white italic">Make an Appointment Now!</li>
+          <li class="text-white text-extra-bold"><a href="/">Book an Appointment</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

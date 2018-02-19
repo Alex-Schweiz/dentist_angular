@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { SocialIcon } from './social-icon.model';
+import { SocialIcon } from '../../shared/social-icon.model';
+import { CoreService } from '../../shared/core.service';
 
 @Component({
   selector: 'app-blue-stripe',
@@ -8,28 +9,12 @@ import { SocialIcon } from './social-icon.model';
   styleUrls: ['./blue-stripe.component.css']
 })
 export class BlueStripeComponent implements OnInit {
+  dentistSocialIcons: SocialIcon[];
 
-  dentistSocialIcons: SocialIcon[] = [{
-    icon: 'fa-facebook',
-    link: 'https://www.facebook.com/World.Of.Dentistry/'
-  }, {
-    icon: 'fa-twitter',
-    link: 'https://www.facebook.com/World.Of.Dentistry/'
-  }, {
-    icon: 'fa-google-plus',
-    link: 'https://www.facebook.com/World.Of.Dentistry/'
-  }, {
-    icon: 'fa-youtube',
-    link: 'https://www.facebook.com/World.Of.Dentistry/'
-  }, {
-    icon: 'fa-rss',
-    link: 'https://www.facebook.com/World.Of.Dentistry/'
-  },
-  ];
-
-  constructor() { }
+  constructor(private coreService: CoreService) { }
 
   ngOnInit() {
+    this.dentistSocialIcons = this.coreService.dentistSocialIcons;
   }
 
 }

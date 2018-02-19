@@ -37,7 +37,12 @@ export class FooterComponent implements OnInit {
     link: '/',
     name: 'Pediatric dentistry'
   }, ];
-  footerOpeningHours = 'Opening hours';
+  footerOpeningHoursHeader = 'Opening hours';
+  footerOpeningHoursList = ['Monday–Friday:9am–6pm', 'Saturday: 10am–4pm', 'Sunday: 10am–1pm'];
+  footerPhoneNumbers = ['555–123–2323', '555–123–2323'];
+  footerEmail = 'bedentist@demolink.org';
+  footerAddress = '22 St. Black Road Orlando,FL';
+  footerZipCode = '34587';
 
   constructor() { }
 

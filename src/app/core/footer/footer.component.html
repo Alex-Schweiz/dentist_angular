@@ -18,17 +18,16 @@
         </ul>
       </div>
       <div class="col-sm-3 footer-openhours">
-        <p class="text-white text-extra-bold">{{footerOpeningHours}}</p>
+        <p class="text-white text-extra-bold">{{footerOpeningHoursHeader}}</p>
         <div class="unit">
           <div class="unit-left">
             <div class="icon fa fa-clock-o icon-circle text-primary left"></div>
           </div>
           <div class="unit-body">
             <div class="italic">
-              <p class="text-gray-lighter">Monday–Friday:9am–6pm <br>
-                Saturday: 10am–4pm <br>
-                Sunday: 10am–1pm
-              </p>
+              <ng-container *ngFor="let item of footerOpeningHoursList">
+                <p class="text-gray-lighter">{{item}}</p>
+              </ng-container>
             </div>
           </div>
         </div>
@@ -41,7 +40,9 @@
           </div>
           <div class="unit-body">
             <div class="italic">
-              <p class="text-gray-lighter">555–123–2323; <br> 555–123–2323</p>
+              <ng-container *ngFor="let item of footerPhoneNumbers">
+                <p class="text-gray-lighter">{{item}}</p>
+              </ng-container>
             </div>
           </div>
         </div>
@@ -51,7 +52,7 @@
           </div>
           <div class="unit-body">
             <div class="italic">
-              <p class="text-gray-lighter">bedentist@demolink.org</p>
+              <p class="text-gray-lighter">{{footerEmail}}</p>
             </div>
           </div>
         </div>
@@ -61,7 +62,7 @@
           </div>
           <div class="unit-body">
             <div class="italic">
-              <p class="text-gray-lighter">22 St. Black Road Orlando,PL<br> 34587</p>
+              <p class="text-gray-lighter">{{footerAddress}}<br> {{footerZipCode}}</p>
             </div>
           </div>
         </div>

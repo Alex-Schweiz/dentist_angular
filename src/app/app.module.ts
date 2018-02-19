@@ -14,6 +14,7 @@ import { HomeHowWeCanHelpComponent } from './home/home-how-we-can-help/home-how-
 import { HomeRecentNewsComponent } from './home/home-recent-news/home-recent-news.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { FooterCopyrightComponent } from './core/footer/footer-copyright/footer-copyright.component';
+import {CoreService} from './core/shared/core.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { FooterCopyrightComponent } from './core/footer/footer-copyright/footer-
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ CoreService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

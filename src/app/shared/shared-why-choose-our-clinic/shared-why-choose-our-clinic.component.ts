@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
-import { WhyChooseUs } from './home-why-us.model';
+import { WhyChooseUs } from './shared-why-us.model';
 
 @Component({
-  selector: 'app-home-why-choose-our-clinic',
-  templateUrl: './home-why-choose-our-clinic.component.html',
-  styleUrls: ['./home-why-choose-our-clinic.component.css']
+  selector: 'app-shared-why-choose-our-clinic',
+  templateUrl: './shared-why-choose-our-clinic.component.html',
+  styleUrls: ['./shared-why-choose-our-clinic.component.css']
 })
-export class HomeWhyChooseOurClinicComponent implements OnInit {
+export class SharedWhyChooseOurClinicComponent implements OnInit {
 
   headingSectionText = 'Why choose the BeDentist clinic?';
 

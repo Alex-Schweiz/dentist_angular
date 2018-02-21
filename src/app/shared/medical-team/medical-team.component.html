@@ -1,0 +1,45 @@
+<section class="section-medicalteam">
+  <div class="container">
+    <h3>Medical Team</h3>
+    <div class="row">
+      <ng-container *ngFor="let member of teamMembers">
+        <div class="col-sm-3">
+          <a href="/"><img src="{{member.imgPath}}" alt=""></a>
+          <a href="#"><h4>{{member.name}}</h4></a>
+          <h6 class="text-extra-bold">{{member.majority}}</h6>
+          <p>{{member.description}}</p>
+        </div>
+      </ng-container>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <ul class="list-inline">
+          <li><a href="#" class="icon fa fa-facebook"></a></li>
+          <li><a href="#" class="icon fa fa-twitter"></a></li>
+          <li><a href="#" class="icon fa fa-google-plus"></a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul class="list-inline">
+          <li><a href="#" class="icon fa fa-facebook"></a></li>
+          <li><a href="#" class="icon fa fa-twitter"></a></li>
+          <li><a href="#" class="icon fa fa-google-plus"></a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul class="list-inline">
+          <li><a href="#" class="icon fa fa-facebook"></a></li>
+          <li><a href="#" class="icon fa fa-twitter"></a></li>
+          <li><a href="#" class="icon fa fa-google-plus"></a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <ul class="list-inline">
+          <li><a href="#" class="icon fa fa-facebook"></a></li>
+          <li><a href="#" class="icon fa fa-twitter"></a></li>
+          <li><a href="#" class="icon fa fa-google-plus"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

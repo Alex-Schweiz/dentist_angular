@@ -9,7 +9,7 @@ import { WhyChooseUs } from './shared-why-us.model';
 })
 export class SharedWhyChooseOurClinicComponent implements OnInit {
 
-  headingSectionText = 'Why choose the BeDentist clinic?';
+  headingSectionText = 'Why choose the AlexDentist clinic?';
 
   whyChooseUsSection: WhyChooseUs[] = [{
     icon: 'fa-book',
@@ -17,7 +17,7 @@ export class SharedWhyChooseOurClinicComponent implements OnInit {
     text: 'Booking an appointment at our dental clinic is as easy as doing 2 clicks!'
   }, {
     icon: 'fa-group',
-    heading: 'Expirience',
+    heading: 'Experience',
     text: 'Combined, our 5 dentists have over half a century of practical experience. They are ready to put it to action for you!'
   }, {
     icon: 'fa-clock-o',

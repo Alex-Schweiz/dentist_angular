@@ -17,46 +17,4 @@
 <app-shared-why-choose-our-clinic></app-shared-why-choose-our-clinic>
 
 <!-- Contact us -->
-<section class="section-contactus">
-  <div class="container">
-    <h3>Contact us</h3>
-    <form action="">
-      <div class="col-md-4">
-        <div class="form-group">
-          <label class="form-label form-label-outside" for="contact-name">Your name<span class="text-primary">*</span></label>
-          <input id="contact-name" class="form-control form-control-has-validation form-control-last-child"
-                 name="name" data-contraints="@Required" type="text" placeholder="Your name">
-          <span class="form-validation"></span>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="form-group">
-          <label class="form-label form-label-outside" for="contact-email">Your email<span class="text-primary">*</span></label>
-          <input id="contact-email" class="form-control form-control-has-validation form-control-last-child"
-                 name="email" data-contraints="@Required" type="email" placeholder="mail@mail.com">
-          <span class="form-validation"></span>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="form-group">
-          <label class="form-label form-label-outside" for="subject">Subject</label>
-          <input id="subject" class="form-control form-control-has-validation form-control-last-child"
-                 name="subject" data-contraints="@Required" type="text" placeholder="Subject">
-          <span class="form-validation"></span>
-        </div>
-      </div>
-      <div class="col-md-12">
-        <div class="form-group">
-          <label class="form-label form-label-outside" for="contact-message">Your message<span class="text-primary">*</span></label>
-          <textarea class="form-control form-control-has-validation form-control-last-child textarea"
-            placeholder="Your message" name="message" id="contact-message" cols="30" rows="3"
-          ></textarea>
-          <span class="form-validation"></span>
-        </div>
-      </div>
-    </form>
-    <div class="middle-button">
-      <button class="btn btn-primary" type="submit">Send</button>
-    </div>
-  </div>
-</section>
+<app-contact-us></app-contact-us>

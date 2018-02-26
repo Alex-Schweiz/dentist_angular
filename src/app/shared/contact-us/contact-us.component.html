@@ -1,0 +1,59 @@
+<section class="section-contactus">
+  <div class="container">
+    <h3>Contact us</h3>
+    <form [formGroup]="contactUsForm" (ngSubmit)="onSubmit()">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label class="form-label form-label-outside" for="name">Your name<span class="text-primary">*</span></label>
+          <input
+            class="form-control form-control-has-validation form-control-last-child"
+            type="text"
+            id="name"
+            formControlName="name"
+            placeholder="Your name">
+          <span class="form-validation"></span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label class="form-label form-label-outside" for="email">Your email<span class="text-primary">*</span></label>
+          <input
+            class="form-control form-control-has-validation form-control-last-child"
+            type="text"
+            id="email"
+            formControlName="email"
+            placeholder="Your email">
+          <span class="form-validation"></span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label class="form-label form-label-outside" for="subject">Subject</label>
+          <input
+            class="form-control form-control-has-validation form-control-last-child"
+            type="text"
+            id="subject"
+            formControlName="subject"
+            placeholder="Subject">
+          <span class="form-validation"></span>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="form-group">
+          <label class="form-label form-label-outside" for="message">Your message<span class="text-primary">*</span></label>
+          <textarea
+            class="form-control form-control-has-validation form-control-last-child"
+            id="message"
+            formControlName="message"
+            placeholder="Your message"
+            cols="30" rows="3">
+          </textarea>
+          <span class="form-validation"></span>
+        </div>
+      </div>
+      <div class="middle-button">
+        <button class="btn btn-primary" type="submit">Send</button>
+      </div>
+    </form>
+  </div>
+</section>

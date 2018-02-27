@@ -9,6 +9,7 @@ import { CoreModule } from './core/core.module';
 import { AboutModule } from './about/about.module';
 import { TeamComponent } from './team/team.component';
 import { ServicesComponent } from './services/services.component';
+import { BlogModule } from './blog/blog.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ServicesComponent } from './services/services.component';
     SharedModule,
     HomeModule,
     CoreModule,
-    AboutModule
+    AboutModule,
+    BlogModule
   ],
   bootstrap: [AppComponent]
 })

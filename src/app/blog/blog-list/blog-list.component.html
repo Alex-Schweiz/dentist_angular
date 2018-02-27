@@ -1,11 +1,11 @@
 <!-- Blog -->
 <section class="section-blog">
   <div class="container">
-    <h3>{{blogTitle}}</h3>
+    <!--<h3>{{blogTitle}}</h3>-->
 
     <!-- Left block -->
     <div class="col-sm-8">
-      <div class="row">
+      <div class="col-sm-12">
         <h3 class="text-bold"><a href="#">Avoiding bad breath</a></h3>
         <div class="author">
           <ul>
@@ -14,7 +14,7 @@
             <li><a href="">Dental</a></li>
           </ul>
         </div>
-        <img src="assets/img/categories-list-01-770x562.jpg" alt="">
+        <img src="assets/img/categories-list-01-770x562.jpg" alt="" width="100%">
         <p>Americans oftentimes ignore some basic, daily routines of oral hygiene, that need to be upheld.
           Practicing healthy habits like these ones will most surely help you avoid such nasty things as a morning
           bad breath or teeth grinding.</p>
@@ -31,7 +31,7 @@
 
       <hr>
 
-      <div class="row">
+      <div class="col-sm-12">
         <h4><a href="#">Avoiding bad breath</a></h4>
         <div class="author">
           <ul>
@@ -40,7 +40,7 @@
             <li><a href="">Dental</a></li>
           </ul>
         </div>
-        <img src="assets/img/categories-list-03-770x562.jpg" alt="">
+        <img src="assets/img/categories-list-03-770x562.jpg" alt="" width="100%">
         <p>Bad breath is a deal breaker both in business and in personal life of ours. And while breath fresheners
           or candies hide it, they do not cure the very problem at hand… So, most importantly, the bad breath is
           caused by a lack of oral…</p>
@@ -57,7 +57,7 @@
 
       <hr>
 
-      <div class="row">
+      <div class="col-sm-12">
         <h4><a href="#">Avoiding bad breath</a></h4>
         <div class="author">
           <ul>
@@ -66,7 +66,7 @@
             <li><a href="">Dental</a></li>
           </ul>
         </div>
-        <img src="assets/img/categories-list-04-770x562.jpg" alt="">
+        <img src="assets/img/categories-list-04-770x562.jpg" alt="" width="100%">
         <p>Bad breath is a deal breaker both in business and in personal life of ours. And while breath fresheners
           or candies hide it, they do not cure the very problem at hand… So, most importantly, the bad breath is
           caused by a lack of oral…</p>
@@ -83,7 +83,7 @@
 
       <hr>
 
-      <div class="row">
+      <div class="col-sm-12">
         <h4><a href="#">Avoiding bad breath</a></h4>
         <div class="author">
           <ul>
@@ -92,7 +92,7 @@
             <li><a href="">Dental</a></li>
           </ul>
         </div>
-        <img src="assets/img/categories-list-05-770x562.jpg" alt="">
+        <img src="assets/img/categories-list-05-770x562.jpg" alt="" width="100%">
         <p>Bad breath is a deal breaker both in business and in personal life of ours. And while breath fresheners
           or candies hide it, they do not cure the very problem at hand… So, most importantly, the bad breath is
           caused by a lack of oral…</p>
@@ -109,17 +109,19 @@
 
       <hr>
 
-      <div class="paginate">
-        <ul>
-          <li><span class="active">1</span></li>
-          <li><a href=""><span>2</span></a></li>
-          <li><a href=""><span>3</span></a></li>
-          <li><a href=""><span>4</span></a></li>
-          <li><a href=""><span>5</span></a></li>
-          <li><span>...</span></li>
-          <li><a href=""><span>125</span></a></li>
-          <li><a href=""><span class="active">Next</span><span class="text-extra-bold"> ></span></a></li>
-        </ul>
+      <div class="col-sm-12">
+        <div class="paginate">
+          <ul>
+            <li><span class="active">1</span></li>
+            <li><a href=""><span>2</span></a></li>
+            <li><a href=""><span>3</span></a></li>
+            <li><a href=""><span>4</span></a></li>
+            <li><a href=""><span>5</span></a></li>
+            <li><span>...</span></li>
+            <li><a href=""><span>125</span></a></li>
+            <li><a href=""><span class="active">Next</span><span class="text-extra-bold"> ></span></a></li>
+          </ul>
+        </div>
       </div>
 
     </div>
@@ -128,8 +130,10 @@
     <div class="col-sm-4">
       <h6 class="text-gray-light text-extra-bold">Search</h6>
       <div class="form-group">
-        <input type="text" placeholder="Enter a keyword">
-        <button class=" btn-sm btn-primary"><span class="fa fa-search"></span></button>
+        <input
+          class="form-control form-control-last-child"
+          type="text" placeholder="Enter a keyword">
+        <button class="btn-sm btn-primary"><span class="fa fa-search"></span></button>
       </div>
       <div class="blog-subscribe">
         <h6 class="text-white">Social media discounts</h6>
@@ -145,7 +149,9 @@
         <h6 class="text-white">Subscribe to AlexDentist</h6>
         <p class="text-white">Get both our special offers and our oral health maintenance tips directly to your inbox!</p>
         <div class="form-group">
-          <input type="text" placeholder="Enter a E-mail">
+          <input
+            class="form-control form-control-last-child"
+            type="text" placeholder="Enter a E-mail">
           <button class="btn-lg get-button text-white">Get</button>
         </div>
       </div>

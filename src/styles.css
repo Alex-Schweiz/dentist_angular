@@ -465,7 +465,7 @@ q {
 
 .section-recentnews li + li:before{
   content: " ";
-  border-left: 1px solid #616262;
+  border-left: 1px solid lightgray;
   padding-right: 10px;
 }
 
@@ -915,7 +915,7 @@ a.drop-a:hover {
 }
 
 .blog-subscribe {
-  padding: 30px;
+  padding: 20px 30px;
   background-color: #0095e5;
 }
 

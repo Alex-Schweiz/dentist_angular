@@ -1,3 +1,31 @@
 .text-bold {
   text-align: left;
 }
+
+.btn-sm {
+  display: inline-block;
+  float: right;
+  margin-top: 0;
+  border: 1px;
+  padding: 13px 28px;
+}
+
+.btn-lg {
+  float: right;
+  border: 1px;
+  padding: 13px 20px;
+}
+
+.form-control {
+  display: inline-block;
+  width: 70%;
+}
+
+h6.text-white {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.paginate {
+  margin-top: 35px;
+}

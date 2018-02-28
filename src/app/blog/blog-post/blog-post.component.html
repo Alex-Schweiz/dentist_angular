@@ -1,0 +1,141 @@
+<div class="breadcrumb">
+  <div class="container">
+    <ul>
+      <li><a routerLink="/">Home</a></li>
+      <li class="active"><a routerLink="/blog">Blog</a></li>
+      <li class="active"><a routerLink="/blog">Avoiding bad breath</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Blog -->
+<section class="section-blog">
+  <div class="container">
+
+    <!-- Left block -->
+    <div class="col-sm-8">
+      <div class="row blog-body">
+        <h3>{{articleTitle}}</h3>
+        <div class="author">
+          <ul>
+            <li>by <span class="text-extra-bold text-gray-light"> {{articleAuthor}}</span></li>
+            <li><time class="italic text-gray-lighter post-meta-time">{{articleDate}}</time></li>
+            <li><a>{{articleCategory}}</a></li>
+          </ul>
+        </div>
+        <div class="article-content" [innerHtml]="articleContent">
+        </div>
+      </div>
+      <div class="post-bottom row">
+        <div class="col-sm-5">
+          <div class="tags">
+            <ul class="tag">
+              <li class="italic">Tags</li>
+              <ng-container *ngFor="let item of articleTags">
+                <li class="italic"><a>{{item}}</a></li>
+              </ng-container>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-offset-4 col-sm-3 post-comment italic">
+          <span class="fa fa-comment"></span>
+          <span>{{articleCommentCount}} comments</span>
+        </div>
+      </div>
+      <div class="row">
+        <ul class="share-buttons">
+          <li><a href="#" class="icon fa fa-facebook"></a></li>
+          <li><a href="#" class="icon fa fa-twitter"></a></li>
+          <li><a href="#" class="icon fa fa-google-plus"></a></li>
+          <li><a href="#" class="icon fa fa-youtube"></a></li>
+          <li><a href="#" class="icon fa fa-rss"></a></li>
+        </ul>
+      </div>
+      <div class="copyright row">
+        <div class="col-sm-3">
+          <img src="assets/img/author-138x138.png" alt="">
+        </div>
+        <div class="copyright-body col-sm-9">
+          <h6 class="text-white text-extra-bold">Written by Mark Hoffmann</h6>
+          <p class="text-white">Our clinic's Chief Medical Officer and Founder, Dr. Mark. Hoffman has been working in this field of medical
+            specialization since 2002.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="post-feedback">
+        <p class="text-extra-bold">2 Reviews</p>
+        <div class="post-review-body">
+          <div class="col-sm-2">
+            <img src="assets/img/comments-86x86.png" alt="">
+          </div>
+          <div class="post-review-text col-sm-offset-1">
+            <ul class="italic">
+              <li>by <span class="text-extra-bold">John Doe</span></li>
+              <li><span class="text-gray-light">May 10, 2016</span></li>
+            </ul>
+            <p>This problem with bad breath has been killing me... After visiting this clinic, I feel so much more confident!</p>
+          </div>
+
+        </div>
+
+        <div class="post-review-body">
+          <div class="col-sm-2">
+            <img src="assets/img/comments-86x86.png" alt="">
+          </div>
+          <div class="post-review-text col-sm-offset-1">
+            <ul class="italic">
+              <li>by <span class="text-extra-bold">John Doe</span></li>
+              <li><span class="text-gray-light">May 10, 2016</span></li>
+            </ul>
+            <p>This problem with bad breath has been killing me... After visiting this clinic, I feel so much more confident!</p>
+          </div>
+
+        </div>
+
+        <hr>
+        <div class="post-form">
+          <h6>Leave your reply</h6>
+          <p class="text-gray-light">Your email address will not be published. Required fields are marked *</p>
+
+          <form action="">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label class="form-label form-label-outside" for="contact-name">Your name<span class="text-primary">*</span></label>
+                <input id="contact-name" class="form-control form-control-has-validation form-control-last-child"
+                       name="name" data-contraints="@Required" type="text" placeholder="Your name">
+                <span class="form-validation"></span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label class="form-label form-label-outside" for="contact-email">Your email<span class="text-primary">*</span></label>
+                <input id="contact-email" class="form-control form-control-has-validation form-control-last-child"
+                       name="email" data-contraints="@Required" type="email" placeholder="mail@mail.com">
+                <span class="form-validation"></span>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label class="form-label form-label-outside" for="contact-message">Your comment<span class="text-primary">*</span></label>
+                <textarea id="contact-message" class="form-control form-control-has-validation form-control-last-child textarea"
+                          name="message" data-contraints="@Required" type="textarea" placeholder="Your comment">
+                                </textarea>
+                <span class="form-validation"></span>
+              </div>
+            </div>
+          </form>
+          <div class="col-sm-2">
+            <button class="btn btn-primary" type="submit">Submit a comment</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right block -->
+    <div class="col-sm-4">
+      <!-- Right blog panel -->
+      <app-blog-right-panel></app-blog-right-panel>
+    </div>
+  </div>
+</section>

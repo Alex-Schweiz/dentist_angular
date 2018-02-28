@@ -3,14 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { TeamComponent } from './team/team.component';
 import { ServicesComponent } from './services/services.component';
-import { BlogComponent } from './blog/blog.component';
 
 const appRoutes: Routes = [
   { path: '', loadChildren: './home/home.module#HomeModule' },
   { path: 'about', loadChildren: './about/about.module#AboutModule' },
   { path: 'team', component: TeamComponent },
   { path: 'services', component: ServicesComponent },
-  { path: 'blog', component: BlogComponent },
+  { path: 'blog', loadChildren: './blog/blog.module#BlogModule' },
 ];
 
 @NgModule({

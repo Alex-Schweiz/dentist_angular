@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { SharedModule } from '../shared/shared.module';
 import { CoreModule } from '../core/core.module';
+import { AboutRoutingModule } from './about-routing.module';
+
 import { AboutComponent } from './about.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 
@@ -10,7 +12,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
   imports: [
     CommonModule,
     SharedModule,
-    CoreModule
+    CoreModule,
+    AboutRoutingModule
   ],
   declarations: [
     AboutComponent,

@@ -1,0 +1,58 @@
+<div>
+  <h6 class="text-gray-light text-extra-bold">Search</h6>
+  <div class="form-group">
+    <input
+      class="form-control form-control-last-child"
+      type="text" placeholder="Enter a keyword">
+    <button class="btn-sm btn-primary"><span class="fa fa-search"></span></button>
+  </div>
+  <div class="blog-subscribe">
+    <h6 class="text-white">Social media discounts</h6>
+    <p class="text-white">Look out for our new special offers and discounts across our social platforms!</p>
+    <ul class="list-inline">
+      <ng-container *ngFor="let dentistIcon of dentistSocialIcons">
+        <li><a href="{{dentistIcon.link}}" class="icon fa {{dentistIcon.icon}}"></a></li>
+      </ng-container>
+    </ul>
+    <hr>
+    <h6 class="text-white">Subscribe to AlexDentist</h6>
+    <p class="text-white">Get both our special offers and our oral health maintenance tips directly to your inbox!</p>
+    <div class="form-group">
+      <input
+        class="form-control form-control-last-child"
+        type="text" placeholder="Enter a E-mail">
+      <button class="btn-lg get-button text-white">Get</button>
+    </div>
+  </div>
+
+  <div class="recent-posts">
+    <h6 class="text-extra-bold text-gray-light">Recent posts</h6>
+    <ul>
+      <ng-container *ngFor="let item of recentPosts">
+        <li><time class="text-gray-lighter italic">{{item.date}} –  </time>
+          <a>{{item.title}}</a>
+        </li>
+      </ng-container>
+    </ul>
+  </div>
+
+  <div class="categories">
+    <h6 class="text-extra-bold text-gray-light">Categories</h6>
+    <ul>
+      <ng-container *ngFor="let item of postCategories">
+        <li><a>{{item.title}}</a></li>
+      </ng-container>
+    </ul>
+  </div>
+
+  <hr>
+  <div class="categories">
+    <h6 class="text-extra-bold text-gray-light">Archives</h6>
+    <ul>
+      <ng-container *ngFor="let item of archivesByMonth">
+        <li><a>{{item.month}}</a></li>
+      </ng-container>
+    </ul>
+  </div>
+  <hr>
+</div>

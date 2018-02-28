@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
 import { CoreModule } from '../core/core.module';
 import { BlogRoutingModule } from './blog-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { BlogComponent } from './blog.component';
 import { BlogListComponent } from './blog-list/blog-list.component';
@@ -19,6 +20,7 @@ import { BlogPostLeaveCommentComponent } from './blog-post/blog-post-leave-comme
     CommonModule,
     SharedModule,
     CoreModule,
+    ReactiveFormsModule,
     BlogRoutingModule
   ],
   declarations: [

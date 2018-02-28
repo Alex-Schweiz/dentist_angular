@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { SocialIcon } from '../../core/shared/social-icon.model';
+import { CoreService } from '../../core/shared/core.service';
+
 @Component({
   selector: 'app-blog-post',
   templateUrl: './blog-post.component.html',
@@ -7,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogPostComponent implements OnInit {
 
+  dentistSocialIcons: SocialIcon[];
   articleTitle = 'Avoiding bad breath';
   articleAuthor = 'John Doe';
   articleDate = 'May 10, 2016';
@@ -61,9 +65,10 @@ export class BlogPostComponent implements OnInit {
   articleTags = ['Dental', 'Breath', 'Oral Health'];
   articleCommentCount = '31';
 
-  constructor() { }
+  constructor(private coreService: CoreService) { }
 
   ngOnInit() {
+    this.dentistSocialIcons = this.coreService.dentistSocialIcons;
   }
 
 }

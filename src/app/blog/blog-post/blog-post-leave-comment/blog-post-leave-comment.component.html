@@ -1,0 +1,35 @@
+<div class="post-form">
+  <h6>Leave your reply</h6>
+  <p class="text-gray-light">Your email address will not be published. Required fields are marked *</p>
+
+  <form action="">
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label class="form-label form-label-outside" for="contact-name">Your name<span class="text-primary">*</span></label>
+        <input id="contact-name" class="form-control form-control-has-validation form-control-last-child"
+               name="name" data-contraints="@Required" type="text" placeholder="Your name">
+        <span class="form-validation"></span>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label class="form-label form-label-outside" for="contact-email">Your email<span class="text-primary">*</span></label>
+        <input id="contact-email" class="form-control form-control-has-validation form-control-last-child"
+               name="email" data-contraints="@Required" type="email" placeholder="mail@mail.com">
+        <span class="form-validation"></span>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="form-group">
+        <label class="form-label form-label-outside" for="contact-message">Your comment<span class="text-primary">*</span></label>
+        <textarea id="contact-message" class="form-control form-control-has-validation form-control-last-child textarea"
+                  name="message" data-contraints="@Required" type="textarea" placeholder="Your comment">
+                                </textarea>
+        <span class="form-validation"></span>
+      </div>
+    </div>
+  </form>
+  <div class="col-sm-2">
+    <button class="btn btn-primary" type="submit">Submit a comment</button>
+  </div>
+</div>

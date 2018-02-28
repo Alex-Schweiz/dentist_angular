@@ -1,129 +1,46 @@
 <!-- Blog -->
 <section class="section-blog">
   <div class="container">
-    <!--<h3>{{blogTitle}}</h3>-->
 
     <!-- Left block -->
     <div class="col-sm-8">
-      <div class="col-sm-12">
-        <h3 class="text-bold"><a href="#">Avoiding bad breath</a></h3>
-        <div class="author">
-          <ul>
-            <li>by <span class="text-extra-bold text-gray-light"> John Doe</span></li>
-            <li><time class="italic text-gray-lighter post-meta-time">May 10, 2016</time></li>
-            <li><a href="">Dental</a></li>
-          </ul>
-        </div>
-        <img src="assets/img/categories-list-01-770x562.jpg" alt="" width="100%">
-        <p>Americans oftentimes ignore some basic, daily routines of oral hygiene, that need to be upheld.
-          Practicing healthy habits like these ones will most surely help you avoid such nasty things as a morning
-          bad breath or teeth grinding.</p>
-        <div class="post-bottom">
-          <div class="col-sm-3">
-            <a class="btn btn-primary" >Read more</a>
+      <ng-container *ngFor="let item of blogArticles">
+        <div class="row">
+          <h3 class="text-bold"><a>{{item.title}}</a></h3>
+          <div class="author">
+            <ul>
+              <li>by <span class="text-extra-bold text-gray-light"> {{item.author}}</span></li>
+              <li><time class="italic text-gray-lighter post-meta-time">{{item.date}}</time></li>
+              <li><a href="">Dental</a></li>
+            </ul>
           </div>
-          <div class="col-sm-offset-6 col-sm-3 blog-comment italic">
-            <span class="fa fa-comment"></span>
-            <span>31 comment</span>
+          <img src="{{item.imgPath}}" alt="" width="98%" height="98%">
+          <p>{{item.shortDescription}}</p>
+          <div class="post-bottom">
+            <div class="col-sm-3">
+              <a class="btn btn-primary" >Read more</a>
+            </div>
+            <div class="col-sm-offset-6 col-sm-3 blog-comment italic">
+              <span class="fa fa-comment"></span>
+              <span>{{item.commentsNumber}} comments</span>
+            </div>
           </div>
         </div>
+        <hr>
+      </ng-container>
+
+      <div class="paginate">
+        <ul>
+          <li><span class="active">1</span></li>
+          <li><a href=""><span>2</span></a></li>
+          <li><a href=""><span>3</span></a></li>
+          <li><a href=""><span>4</span></a></li>
+          <li><a href=""><span>5</span></a></li>
+          <li><span>...</span></li>
+          <li><a href=""><span>125</span></a></li>
+          <li><a href=""s><span class="active">Next</span><span class="text-extra-bold"> ></span></a></li>
+        </ul>
       </div>
-
-      <hr>
-
-      <div class="col-sm-12">
-        <h4><a href="#">Avoiding bad breath</a></h4>
-        <div class="author">
-          <ul>
-            <li>by <span class="text-extra-bold text-gray-light"> John Doe</span></li>
-            <li><time class="italic text-gray-lighter post-meta-time">May 10, 2016</time></li>
-            <li><a href="">Dental</a></li>
-          </ul>
-        </div>
-        <img src="assets/img/categories-list-03-770x562.jpg" alt="" width="100%">
-        <p>Bad breath is a deal breaker both in business and in personal life of ours. And while breath fresheners
-          or candies hide it, they do not cure the very problem at hand… So, most importantly, the bad breath is
-          caused by a lack of oral…</p>
-        <div class="post-bottom">
-          <div class="col-sm-3">
-            <a class="btn btn-primary" href="">Read more</a>
-          </div>
-          <div class="col-sm-offset-6 col-sm-3 blog-comment italic">
-            <span class="fa fa-comment"></span>
-            <span>31 comment</span>
-          </div>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="col-sm-12">
-        <h4><a href="#">Avoiding bad breath</a></h4>
-        <div class="author">
-          <ul>
-            <li>by <span class="text-extra-bold text-gray-light"> John Doe</span></li>
-            <li><time class="italic text-gray-lighter post-meta-time">May 10, 2016</time></li>
-            <li><a href="">Dental</a></li>
-          </ul>
-        </div>
-        <img src="assets/img/categories-list-04-770x562.jpg" alt="" width="100%">
-        <p>Bad breath is a deal breaker both in business and in personal life of ours. And while breath fresheners
-          or candies hide it, they do not cure the very problem at hand… So, most importantly, the bad breath is
-          caused by a lack of oral…</p>
-        <div class="post-bottom">
-          <div class="col-sm-3">
-            <a class="btn btn-primary" href="">Read more</a>
-          </div>
-          <div class="col-sm-offset-6 col-sm-3 blog-comment italic">
-            <span class="fa fa-comment"></span>
-            <span>31 comment</span>
-          </div>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="col-sm-12">
-        <h4><a href="#">Avoiding bad breath</a></h4>
-        <div class="author">
-          <ul>
-            <li>by <span class="text-extra-bold text-gray-light"> John Doe</span></li>
-            <li><time class="italic text-gray-lighter post-meta-time">May 10, 2016</time></li>
-            <li><a href="">Dental</a></li>
-          </ul>
-        </div>
-        <img src="assets/img/categories-list-05-770x562.jpg" alt="" width="100%">
-        <p>Bad breath is a deal breaker both in business and in personal life of ours. And while breath fresheners
-          or candies hide it, they do not cure the very problem at hand… So, most importantly, the bad breath is
-          caused by a lack of oral…</p>
-        <div class="post-bottom">
-          <div class="col-sm-3">
-            <a class="btn btn-primary" href="">Read more</a>
-          </div>
-          <div class="col-sm-offset-6 col-sm-3 blog-comment italic">
-            <span class="fa fa-comment"></span>
-            <span>31 comment</span>
-          </div>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="col-sm-12">
-        <div class="paginate">
-          <ul>
-            <li><span class="active">1</span></li>
-            <li><a href=""><span>2</span></a></li>
-            <li><a href=""><span>3</span></a></li>
-            <li><a href=""><span>4</span></a></li>
-            <li><a href=""><span>5</span></a></li>
-            <li><span>...</span></li>
-            <li><a href=""><span>125</span></a></li>
-            <li><a href=""><span class="active">Next</span><span class="text-extra-bold"> ></span></a></li>
-          </ul>
-        </div>
-      </div>
-
     </div>
 
     <!-- Right block -->

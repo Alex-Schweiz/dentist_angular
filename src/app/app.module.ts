@@ -10,12 +10,14 @@ import { AboutModule } from './about/about.module';
 import { TeamComponent } from './team/team.component';
 import { ServicesComponent } from './services/services.component';
 import { BlogModule } from './blog/blog.module';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TeamComponent,
     ServicesComponent,
+    FaqComponent,
   ],
   imports: [
     BrowserModule,

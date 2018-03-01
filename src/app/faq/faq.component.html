@@ -1,0 +1,33 @@
+<!-- Breadcrumbs -->
+<div class="breadcrumb">
+  <div class="container">
+    <ul>
+      <li><a routerLink="/">Home</a></li>
+      <li class="active"><a routerLink="/faq">FAQ</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- FAQ -->
+<section class="section-faq">
+  <div class="container">
+    <h3>{{faqTitle}}</h3>
+    <div class="col-md-10">
+      <p>{{faqDescription}}</p>
+      <hr class="devider">
+      <ng-container *ngFor="let item of faqQuestions">
+        <h4>
+          <span class="text-extra-bold">Q:</span>
+          {{item.question}}
+        </h4>
+        <div>
+          <h4>
+            <span class="text-extra-bold text-gray-light">A:</span>
+            <span class="answer text-gray-light" [innerHtml]="item.answer"></span>
+          </h4>
+        </div>
+        <hr class="devider">
+      </ng-container>
+    </div>
+  </div>
+</section>

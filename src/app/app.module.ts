@@ -7,7 +7,6 @@ import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './home/home.module';
 import { CoreModule } from './core/core.module';
 import { AboutModule } from './about/about.module';
-import { TeamComponent } from './team/team.component';
 import { ServicesComponent } from './services/services.component';
 import { BlogModule } from './blog/blog.module';
 import { FaqComponent } from './faq/faq.component';
@@ -15,9 +14,8 @@ import { FaqComponent } from './faq/faq.component';
 @NgModule({
   declarations: [
     AppComponent,
-    TeamComponent,
     ServicesComponent,
-    FaqComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,

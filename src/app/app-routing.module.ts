@@ -8,7 +8,7 @@ import { FaqComponent } from './faq/faq.component';
 const appRoutes: Routes = [
   { path: '', loadChildren: './home/home.module#HomeModule' },
   { path: 'about', loadChildren: './about/about.module#AboutModule' },
-  { path: 'team', component: TeamComponent },
+  { path: 'team', loadChildren: './team/team.module#TeamModule' },
   { path: 'services', component: ServicesComponent },
   { path: 'faq', component: FaqComponent },
   { path: 'blog', loadChildren: './blog/blog.module#BlogModule' },

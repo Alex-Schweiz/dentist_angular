@@ -4,8 +4,8 @@
     <div class="row">
       <ng-container *ngFor="let member of teamMembers">
         <div class="col-sm-3">
-          <a href="/"><img src="{{member.imgPath}}" alt=""></a>
-          <a href="#"><h4>{{member.name}}</h4></a>
+          <a routerLink="/team/1"><img src="{{member.imgPath}}" alt=""></a>
+          <h4><a style="cursor:pointer;" routerLink="/team/1">{{member.name}}</a></h4>
           <h6 class="text-extra-bold">{{member.majority}}</h6>
           <p>{{member.description}}</p>
         </div>

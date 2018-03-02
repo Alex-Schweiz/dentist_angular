@@ -2,8 +2,8 @@
 <div class="breadcrumb">
   <div class="container">
     <ul>
-      <li><a href="index.html">Services</a></li>
-      <li class="active"><a href="services.html">General and preventive care</a></li>
+      <li><a routerLink="/">Services</a></li>
+      <li class="active"><a routerLink="/services">General and preventive care</a></li>
     </ul>
   </div>
 </div>
@@ -49,90 +49,7 @@
 </section>
 
 <!-- Our patients -->
-<section class="section-ourpatients">
-  <div class="container">
-    <h3>What our patients say</h3>
-    <div class="col-sm-4">
-      <blockquote class="quote marks">
-        <img class="img-responsive img-circle" src="assets/img/testimonials-01-116x116.jpg" alt="">
-        <p>
-          <q>I urgently required dental help last 4th of July.
-            And despite all other clinics being closed, BeDentist took my appointment!
-          </q>
-        </p>
-        <div>
-          <cite class="text-extra-bold text-gray-light">
-            Herbert Wallace
-          </cite>
-          <time class="text-gray-lighter text-italic">
-            – May 10, 2016
-          </time>
-        </div>
-      </blockquote>
-    </div>
-    <div class="col-sm-4">
-      <blockquote class="quote marks">
-        <img class="img-responsive img-circle" src="assets/img/testimonials-02-116x116.jpg" alt="">
-        <p>
-          <q>Comparing teeth whitening prices here and elsewhere,
-            I picked BeDentist. The result was beyond my expectations!
-          </q>
-        </p>
-        <div>
-          <cite class="text-extra-bold text-gray-light">
-            Gary Growles
-          </cite>
-          <time class="text-gray-lighter text-italic">
-            – May 10, 2016
-          </time>
-        </div>
-      </blockquote>
-    </div>
-    <div class="col-sm-4">
-      <blockquote class="quote marks">
-        <img class="img-responsive img-circle" src="assets/img/testimonials-03-116x116.jpg" alt="">
-        <p>
-          <q>Taking my kids to a dentist has never been easier.
-            They just loved the welcoming and warm atmosphere in there!
-          </q>
-        </p>
-        <div>
-          <cite class="text-extra-bold text-gray-light">
-            Daniela Robbery
-          </cite>
-          <time class="text-gray-lighter text-italic">
-            – May 10, 2016
-          </time>
-        </div>
-      </blockquote>
-    </div>
-  </div>
-</section>
+<app-home-testimonials></app-home-testimonials>
 
 <!-- Our Services -->
-<section class="section-ourservices">
-  <div class="container">
-    <h3>Our services</h3>
-    <div class="row">
-      <div class="col-sm-3  col-xs-12">
-        <a href="#"><img src="assets/img/services-04-270x270.jpg" alt=""></a>
-        <a href="#"><h4>General and preventive care</h4></a>
-      </div>
-      <div class="col-sm-3  col-xs-12">
-        <a href="#"><img src="assets/img/services-5-270x270.jpg" alt=""></a>
-        <a href="#"><h4>Cosmetic solutions</h4></a>
-      </div>
-      <div class="col-sm-3  col-xs-12">
-        <a href="#"><img src="assets/img/services-6-270x270.jpg" alt=""></a>
-        <a href="#"><h4>Restorative solutions</h4></a>
-      </div>
-      <div class="col-sm-3  col-xs-12">
-        <a href="#"><img src="assets/imgservices-7-270x270.jpg" alt=""></a>
-        <a href="#"><h4>Additional treatments</h4></a>
-      </div>
-    </div>
-    <div class="middle-button">
-      <a class="btn btn-primary" routerLink="/services">See all services</a>
-    </div>
-  </div>
-</section>
+<app-home-our-services></app-home-our-services>

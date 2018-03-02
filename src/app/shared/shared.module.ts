@@ -6,6 +6,8 @@ import { RouterModule } from '@angular/router';
 import { SharedWhyChooseOurClinicComponent } from './shared-why-choose-our-clinic/shared-why-choose-our-clinic.component';
 import { MedicalTeamComponent } from './medical-team/medical-team.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { HomeOurServicesComponent } from './home-our-services/home-our-services.component';
+import { HomeTestimonialsComponent } from './home-testimonials/home-testimonials.component';
 
 @NgModule({
   imports: [
@@ -16,12 +18,16 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
   declarations: [
     SharedWhyChooseOurClinicComponent,
     MedicalTeamComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    HomeOurServicesComponent,
+    HomeTestimonialsComponent
   ],
   exports: [
     SharedWhyChooseOurClinicComponent,
     MedicalTeamComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    HomeOurServicesComponent,
+    HomeTestimonialsComponent
   ]
 })
 export class SharedModule { }

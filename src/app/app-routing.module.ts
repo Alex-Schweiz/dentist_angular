@@ -9,7 +9,7 @@ const appRoutes: Routes = [
   { path: '', loadChildren: './home/home.module#HomeModule' },
   { path: 'about', loadChildren: './about/about.module#AboutModule' },
   { path: 'team', loadChildren: './team/team.module#TeamModule' },
-  { path: 'services', component: ServicesComponent },
+  { path: 'services', loadChildren: './services/services.module#ServicesModule' },
   { path: 'faq', component: FaqComponent },
   { path: 'blog', loadChildren: './blog/blog.module#BlogModule' },
 ];
